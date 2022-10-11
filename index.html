@@ -9,8 +9,64 @@
     <link rel="stylesheet" href="./assets/style.css">
     <script src="./assets/script.js"></script>
 </head>
-<body>
-        <button onclick="startCountdown()">Start</button>
-        <div id="countdown-text"></div>
+<body class="p-3 mb-2 bg-dark text-white">
+    <div class="btn-default d-flex align-items-center justify-content-center" id="start-div">
+        <button class="m-3" onclick="handleStart()" id="start-button">Start</button>
+    </div>
+    <div id="countdown-text"></div>
+
+    <!-- questions taken from w3 and are slightly revised -->
+    <div id="first-question" class="" style="display: none;">
+        <h2>Inside which HTML element do we put the JavaScript?</h2>
+        <button id="incorrect">
+            <code>scripting</code>
+        </button>
+        <br>
+        <button id="correct1">
+            <code>script</code>
+        </button>
+        <br>
+        <button id="incorrect">
+            <code>js</code>
+        </button>
+        <br>
+        <button id="incorrect">
+            <code>coding</code>
+        </button>
+        <br>
+    </div>
+
+    <div id="second-question" class="" style="display: none;">
+        <h2>Where is the correct place to insert a JavaScript?</h2>
+        <button id="incorrect">
+            <code>head</code>
+        </button>
+        <br>
+        <button id="correct2">
+            <code>body</code>
+        </button>
+        <br>
+        <button id="incorrect">
+            <code>footer</code>
+        </button>
+        <br>
+    </div>
+
+    <div id="third-question" class="" style="display: none;">
+        <h2>What is the correct syntax for referring to an external script called "xxx.js"?</h2>
+        <button id="correct3">
+            <code>script src="xxx.js"</code>
+        </button>
+        <br>
+        <button id="incorrect">
+            <code>script name="xxx.js"</code>
+        </button>
+        <br>
+        <button id="incorrect">
+            <code>script href ="xxx.js"</code>
+        </button>
+        <br>
+    </div>
+
 </body>
 </html>

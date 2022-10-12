@@ -16,6 +16,10 @@
     <div id="countdown-text"></div>
 
     <!-- questions taken from w3 and are slightly revised -->
+
+    <!-- each div has a style of none to not be displayed initially until needed -->
+
+    <!-- first question -->
     <div id="first-question" class="" style="display: none;">
         <h2>Inside which HTML element do we put the JavaScript?</h2>
         <button id="incorrect">
@@ -36,6 +40,7 @@
         <br>
     </div>
 
+    <!-- second question -->
     <div id="second-question" class="" style="display: none;">
         <h2>Where is the correct place to insert a JavaScript?</h2>
         <button id="incorrect">
@@ -52,6 +57,7 @@
         <br>
     </div>
 
+    <!-- third question -->
     <div id="third-question" class="" style="display: none;">
         <h2>What is the correct syntax for referring to an external script called "xxx.js"?</h2>
         <button id="correct3">
@@ -67,6 +73,18 @@
         </button>
         <br>
     </div>
+
+    <!-- scoreboard  -->
+    <div id="scoreboard" class="" style="display: none;">
+        <input type="text" placeholder="Enter text" onclick="getVal()">
+    </div>
+
+    <!-- time is up  -->
+    <div id="timeisup" class="" style="display: none;">
+        <button onclick="handleStart()"> Try Again? </button>
+    </div>
+
+
 
 </body>
 </html>
